@@ -1,0 +1,111 @@
+:root{
+    --color: #2CC09C;
+    --background:#212529;
+}
+
+
+
+.headerNav{
+    background: var(--background);
+    color:white;
+    font-size:12px;
+    font-family:Roboto, sans-serif;
+}
+.headerNav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.headerNav li, .headerNav a {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    transition: color .3s;
+}
+.headerNav li {
+    padding: 0 8px;
+}
+.headerNav a {
+    text-decoration:none ;
+}
+.headerNav a {
+    color: inherit;
+}
+.headerNav svg {
+    height: 12px;
+    width: 12px;
+    margin-right: 8px ; 
+}
+.headerNav .lange{
+    margin-left: auto;
+}
+.headerInfo{
+    background-color: var(--color);
+}
+.headerLink svg {
+    color: var(--color);
+}
+.headerLink a:hover {
+    color: var(--color);
+}
+.lange a::after{
+    content: '';
+    display: inline-block;
+    border-left:  3px solid  transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px  solid white;
+    width: 0px ;
+    height: 0px;
+    margin-left: 5px ;
+
+}
+
+.Background{
+    background-color: gray;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+}
+@media only screen and (min-width:720px){
+    .headerNav{
+        font-size: 14px;
+        background: linear-gradient(to right, var(--color), var(--color) 50%, var(--background ) 50.01%, var(--background));
+    }
+
+ .headerContent{
+    display: flex ;
+    justify-content: space-between;
+    width: 1000px;
+    background: var(--background);
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+ .headerNav li,
+ .headerNav a{
+    height: 55px;
+ }
+ .headerNav svg {
+    height: 16px;
+    width: 16px;
+   
+}
+.headerInfo li:last-child{
+    background: var(--background);
+    padding-left: 0;
+}
+.headerInfo li:last-child::before{
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    border-right: solid 30px transparent;
+    border-bottom:  solid 55px var(--color);
+
+}   
+.headerInfo li:last-child svg {
+    color:var(--color);
+}
+
+    
+}
